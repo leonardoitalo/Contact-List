@@ -46,7 +46,3 @@ export const BarraAcoes = styled.div`
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 16px;
 `
-
-// export const BotaoCancelarRemover = styled(Botao)`
-//   background-color: ${variaveis.vermelho};
-// `
