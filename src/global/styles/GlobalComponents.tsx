@@ -2,8 +2,9 @@ import styled from "styled-components";
 import variables from "./variables";
 
 export const Container = styled.div`
-  display: grid;
-  grid-template-columns: 224px auto;
+  /* display: grid;
+  grid-template-columns: 224px auto; */
+  padding-top: 40px;
 `
 
 export const MainContainer = styled.main`
@@ -32,4 +33,12 @@ export const Button = styled.button`
   background-color: ${variables.blueDark};
   border-radius: 8px;
   margin-right: 8px;
+`
+
+export const ButtonSave = styled(Button)`
+  background-color: ${variables.green};
+`
+
+export const ButtonRed = styled(Button)`
+  background-color: ${variables.red};
 `

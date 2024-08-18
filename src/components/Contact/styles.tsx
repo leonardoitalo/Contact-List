@@ -16,9 +16,8 @@ export const Card = styled.div`
 `
 
 export const Name = styled.h4`
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
-  margin-bottom: 8px;
 `
 export const Tag = styled.span`
   padding: 4px 8px;
@@ -30,14 +29,14 @@ export const Tag = styled.span`
   margin-right: 16px;
   display: inline-block;
 `
-export const ContactInfo = styled.h4`
+export const ContactInfo = styled.textarea`
   color: #8b8b8b;
   font-size: 14px;
   line-height: 24px;
   font-family: 'Roboto Mono', monospace;
   display: block;
   width: 100%;
-  margin: 16px 0;
+  margin: 8px 0;
   resize: none;
   border: none;
   background-color: transparent;
