@@ -21,7 +21,7 @@ export const Field = styled.input`
   color: #666666;
   border-color: #666666;
   width: 90%;
- `
+`
 
 export const Button = styled.button`
   font-weight: bold;

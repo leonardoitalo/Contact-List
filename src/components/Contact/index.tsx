@@ -2,8 +2,8 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Button, ButtonRed, ButtonSave } from "global/styles/GlobalComponents";
 import { Card, ContactInfo, Name } from "./styles";
-import { remove, editContact } from "Redux/store/reducers/contacts-reducer";
-import { RootReducer } from "Redux/store/store";
+import { remove, editContact } from "store/reducers/contacts-reducer";
+import { RootReducer } from "store/store";
 import { IContact } from "interfaces/IContact";
 
 const Contact = () => {

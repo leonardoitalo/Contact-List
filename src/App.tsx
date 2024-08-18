@@ -1,9 +1,9 @@
-// import { BarraLateral } from "containers/AsideBar"
-import Contact from "containers/ContactList"
 import { Container } from "global/styles/GlobalComponents"
 import GlobalStyles from "global/styles/GlobalStyles"
 import { Provider } from 'react-redux'
-import { store } from "Redux/store/store"
+import { RouterProvider } from "react-router-dom"
+import routes from "routes"
+import { store } from "store/store"
 
 function App() {
   return (
@@ -11,8 +11,7 @@ function App() {
       <Provider store={store}>
         <GlobalStyles />
         <Container>
-          {/* <BarraLateral /> */}
-          <Contact />
+          <RouterProvider router={routes} />
         </Container>
       </Provider>
     </>

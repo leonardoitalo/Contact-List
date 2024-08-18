@@ -1,5 +1,6 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import contacts from "data/contacts.json"
+import { IContact } from "interfaces/IContact";
 
 const initialState = contacts
 
@@ -16,9 +17,12 @@ const contactsSlice = createSlice({
             if (index !== -1) {
                 state[index] = { ...state[index], ...updatedContact };
             }
+        },
+        addContact: (state, action: PayloadAction<IContact>) => {
+            state.push(action.payload);
         }
     }
 })
 
-export const { remove, editContact } = contactsSlice.actions
+export const { remove, editContact, addContact } = contactsSlice.actions
 export default contactsSlice.reducer
