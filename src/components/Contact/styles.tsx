@@ -18,6 +18,12 @@ export const Card = styled.div`
 export const Name = styled.h4`
   font-size: 22px;
   font-weight: bold;
+
+  input {
+    background-color: transparent;
+    border: transparent;
+    font-weight: bold;
+  }
 `
 export const Tag = styled.span`
   padding: 4px 8px;
